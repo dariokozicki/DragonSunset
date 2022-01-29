@@ -2,8 +2,12 @@ Unity/Logs/
 Unity/Library/
 Unity/Temp/
 Unity/UserSettings/
+<<<<<<< HEAD
 build/
 Unity/Assembly-CSharp/
 Unity/.vsconfig/
 Unity/Assembly-CSharp-firstpass/
 Unity/Unity.sln/
+=======
+build/
+>>>>>>> c462d58fc03e903c56a9c0500a9a5c7d783e440f
