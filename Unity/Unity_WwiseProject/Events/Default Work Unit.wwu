@@ -44,6 +44,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Hit" ID="{1B719982-3243-4F1B-8EA0-98E2EA37C87C}">
+					<ChildrenList>
+						<Action Name="" ID="{D544C71E-85CD-4C9F-91E5-CAADD6966429}" ShortID="722573089">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hit" ID="{396E182A-4CE1-48BA-822A-978F9663BC91}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PowerUp" ID="{6CBBDE11-39DA-4940-8647-E8017C3F289C}">
+					<ChildrenList>
+						<Action Name="" ID="{B8EA8C9A-A11C-40B5-9A8E-DE0716E5E5A6}" ShortID="1689583">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PowerUp" ID="{55FB9629-0064-4C85-B6E9-F075E0E77CD9}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PowerDown" ID="{9E866E7E-A57D-4052-BD28-C24722D4432F}">
+					<ChildrenList>
+						<Action Name="" ID="{44AC4B6F-F108-4C23-9F13-8559A3A11275}" ShortID="779864819">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PowerDown" ID="{08EB66CE-2A02-4C36-B788-9FF6F24997C1}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

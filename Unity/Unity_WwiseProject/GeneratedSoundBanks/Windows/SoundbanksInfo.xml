@@ -16,14 +16,17 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1808031558">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1723213477">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3709115519" Name="AmbienceWind" ObjectPath="\Events\Default Work Unit\AmbienceWind" DurationType="Infinite"/>
 				<Event Id="3233130319" Name="AmbienceWindStop" ObjectPath="\Events\Default Work Unit\AmbienceWindStop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1116398592" Name="Hit" ObjectPath="\Events\Default Work Unit\Hit" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3011204530" Name="Move" ObjectPath="\Events\Default Work Unit\Stingers\Move" DurationType="OneShot" DurationMin="1.654082" DurationMax="1.758118"/>
+				<Event Id="2715854868" Name="PowerDown" ObjectPath="\Events\Default Work Unit\PowerDown" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3950429679" Name="PowerUp" ObjectPath="\Events\Default Work Unit\PowerUp" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="86513517" Language="SFX">
