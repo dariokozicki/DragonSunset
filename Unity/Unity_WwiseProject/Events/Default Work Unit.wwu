@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7BCB3E8E-A0FF-45B5-9EE5-006601CE4FE7}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{7BCB3E8E-A0FF-45B5-9EE5-006601CE4FE7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Stingers" ID="{9000F4B8-2C64-470B-AD95-37367D4DDFB7}" ShortID="99533394">
+					<ChildrenList>
+						<Event Name="Move" ID="{58482215-A1A7-458E-B9E5-F9E1E1E95562}">
+							<ChildrenList>
+								<Action Name="" ID="{2A3F1F85-9697-4B8B-ABDD-0DD65E36B173}" ShortID="810109824">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WingBat" ID="{1155E6F8-683C-4331-A3A4-505DF6328311}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="AmbienceWind" ID="{C763AD6F-B145-41B5-AD81-5AB57A2105C9}">
+					<ChildrenList>
+						<Action Name="" ID="{6DAC0187-D50F-4AEB-A15C-3324AFBE3609}" ShortID="1031208339">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WindBlend" ID="{9972B6E9-C74F-4B45-9785-315E3208E2FE}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AmbienceWindStop" ID="{5CC8EFC6-9B6C-484C-8987-4B1E749CD625}">
+					<ChildrenList>
+						<Action Name="" ID="{05B988D2-7045-4F2D-8519-1D4467D02170}" ShortID="220122848">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WindBlend" ID="{9972B6E9-C74F-4B45-9785-315E3208E2FE}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Hit" ID="{1B719982-3243-4F1B-8EA0-98E2EA37C87C}">
+					<ChildrenList>
+						<Action Name="" ID="{D544C71E-85CD-4C9F-91E5-CAADD6966429}" ShortID="722573089">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hit" ID="{396E182A-4CE1-48BA-822A-978F9663BC91}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PowerUp" ID="{6CBBDE11-39DA-4940-8647-E8017C3F289C}">
+					<ChildrenList>
+						<Action Name="" ID="{B8EA8C9A-A11C-40B5-9A8E-DE0716E5E5A6}" ShortID="1689583">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PowerUp" ID="{55FB9629-0064-4C85-B6E9-F075E0E77CD9}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PowerDown" ID="{9E866E7E-A57D-4052-BD28-C24722D4432F}">
+					<ChildrenList>
+						<Action Name="" ID="{44AC4B6F-F108-4C23-9F13-8559A3A11275}" ShortID="779864819">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PowerDown" ID="{08EB66CE-2A02-4C36-B788-9FF6F24997C1}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

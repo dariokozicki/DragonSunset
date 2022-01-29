@@ -2,12 +2,25 @@ Unity/Logs/
 Unity/Library/
 Unity/Temp/
 Unity/UserSettings/
-<<<<<<< HEAD
+
+*/backup
+*/.cache
+*/*.akd
+*/*.validationcache
+*/*.wsettings
+*/*.wem
+*/*.prof
+
+WwiseUnityIntegration_*_Src.zip
+*/[Aa]ssets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
+
+*/[Aa]ssets/Wwise/Documentation.meta
+*/[Aa]ssets/Wwise/Documentation/*
+*/[Aa]ssets/Wwise/API/Runtime/Plugins.meta
+*/[Aa]ssets/Wwise/API/Runtime/Plugins/*
+
 build/
 Unity/Assembly-CSharp/
 Unity/.vsconfig/
 Unity/Assembly-CSharp-firstpass/
 Unity/Unity.sln/
-=======
-build/
->>>>>>> c462d58fc03e903c56a9c0500a9a5c7d783e440f
