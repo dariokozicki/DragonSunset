@@ -18,3 +18,9 @@ WwiseUnityIntegration_*_Src.zip
 */[Aa]ssets/Wwise/Documentation/*
 */[Aa]ssets/Wwise/API/Runtime/Plugins.meta
 */[Aa]ssets/Wwise/API/Runtime/Plugins/*
+
+build/
+Unity/Assembly-CSharp/
+Unity/.vsconfig/
+Unity/Assembly-CSharp-firstpass/
+Unity/Unity.sln/
