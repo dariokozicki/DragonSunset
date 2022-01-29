@@ -16,13 +16,24 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1676172676">
+		<SoundBank Id="3161908922" Language="SFX" Hash="910235701">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1256202815" Name="Play" ObjectPath="\Events\Default Work Unit\Stingers\Play" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3709115519" Name="AmbienceWind" ObjectPath="\Events\Default Work Unit\AmbienceWind" DurationType="Infinite"/>
+				<Event Id="3233130319" Name="AmbienceWindStop" ObjectPath="\Events\Default Work Unit\AmbienceWindStop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="99654240" Language="SFX">
+					<ShortName>Wind.wav</ShortName>
+					<Path>SFX\Wind_3BF7075C.wem</Path>
+				</File>
+				<File Id="472236614" Language="SFX">
+					<ShortName>Wind.wav</ShortName>
+					<Path>SFX\Wind_EA9774F5.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -1,3 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1256202815	Play			\Default Work Unit\Stingers\Play	
+	3233130319	AmbienceWindStop			\Default Work Unit\AmbienceWindStop	
+	3709115519	AmbienceWind			\Default Work Unit\AmbienceWind	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	99654240	WindLow	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Wind_3BF7075C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\WindBlend\WindLow		3803408
+	472236614	Wind	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Wind_EA9774F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind\Wind		4158044
 
