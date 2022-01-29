@@ -2,3 +2,8 @@ Unity/Logs/
 Unity/Library/
 Unity/Temp/
 Unity/UserSettings/
+build/
+Unity/Assembly-CSharp/
+Unity/.vsconfig/
+Unity/Assembly-CSharp-firstpass/
+Unity/Unity.sln/
