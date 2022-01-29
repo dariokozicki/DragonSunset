@@ -10,7 +10,7 @@
 								<Action Name="" ID="{2A3F1F85-9697-4B8B-ABDD-0DD65E36B173}" ShortID="810109824">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Wing" ID="{6DAD6143-2DC3-41A2-ADA2-AC66C11DB810}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+											<ObjectRef Name="WingBat" ID="{1155E6F8-683C-4331-A3A4-505DF6328311}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

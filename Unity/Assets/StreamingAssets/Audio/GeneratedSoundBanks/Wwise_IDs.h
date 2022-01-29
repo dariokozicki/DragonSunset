@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID AMBIENCEWIND = 3709115519U;
         static const AkUniqueID AMBIENCEWINDSTOP = 3233130319U;
+        static const AkUniqueID MOVE = 3011204530U;
     } // namespace EVENTS
 
     namespace BANKS
