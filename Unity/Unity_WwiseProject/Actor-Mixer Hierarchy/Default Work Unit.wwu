@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Stingers" ID="{FA0C8662-3058-4609-B3A0-05E035A10A1A}" ShortID="756456416">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Move" ID="{5100CD71-1C2B-4EF1-A1BF-97EF080F4832}" ShortID="1025664729">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D398C54E-D24A-478E-B13E-E8A1A7749BB2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1D78BA6B-68E9-4BD7-AB03-0917654A5970}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Other" ID="{2E0A011D-F326-4C9A-897E-1FB5947E7727}" ShortID="379021484"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

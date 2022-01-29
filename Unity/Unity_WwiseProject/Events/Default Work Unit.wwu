@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7BCB3E8E-A0FF-45B5-9EE5-006601CE4FE7}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{7BCB3E8E-A0FF-45B5-9EE5-006601CE4FE7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Stingers" ID="{9000F4B8-2C64-470B-AD95-37367D4DDFB7}" ShortID="99533394">
+					<ChildrenList>
+						<Event Name="Play" ID="{58482215-A1A7-458E-B9E5-F9E1E1E95562}">
+							<ChildrenList>
+								<Action Name="" ID="{2A3F1F85-9697-4B8B-ABDD-0DD65E36B173}" ShortID="810109824">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Move" ID="{5100CD71-1C2B-4EF1-A1BF-97EF080F4832}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
