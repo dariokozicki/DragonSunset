@@ -5,12 +5,12 @@
 			<ChildrenList>
 				<Folder Name="Stingers" ID="{9000F4B8-2C64-470B-AD95-37367D4DDFB7}" ShortID="99533394">
 					<ChildrenList>
-						<Event Name="Play" ID="{58482215-A1A7-458E-B9E5-F9E1E1E95562}">
+						<Event Name="Move" ID="{58482215-A1A7-458E-B9E5-F9E1E1E95562}">
 							<ChildrenList>
 								<Action Name="" ID="{2A3F1F85-9697-4B8B-ABDD-0DD65E36B173}" ShortID="810109824">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Move" ID="{5100CD71-1C2B-4EF1-A1BF-97EF080F4832}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+											<ObjectRef Name="Wing" ID="{6DAD6143-2DC3-41A2-ADA2-AC66C11DB810}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -18,6 +18,32 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="AmbienceWind" ID="{C763AD6F-B145-41B5-AD81-5AB57A2105C9}">
+					<ChildrenList>
+						<Action Name="" ID="{6DAC0187-D50F-4AEB-A15C-3324AFBE3609}" ShortID="1031208339">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WindBlend" ID="{9972B6E9-C74F-4B45-9785-315E3208E2FE}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AmbienceWindStop" ID="{5CC8EFC6-9B6C-484C-8987-4B1E749CD625}">
+					<ChildrenList>
+						<Action Name="" ID="{05B988D2-7045-4F2D-8519-1D4467D02170}" ShortID="220122848">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WindBlend" ID="{9972B6E9-C74F-4B45-9785-315E3208E2FE}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
