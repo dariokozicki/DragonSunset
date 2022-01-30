@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\GD\focunon\Unity\Unity_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\GD\focunon\Unity\Unity_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\GD\focunon\Unity\Unity_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1015590069">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="879888868">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3709115519" Name="AmbienceWind" ObjectPath="\Events\Default Work Unit\AmbienceWind" DurationType="Infinite"/>
+				<Event Id="3233130319" Name="AmbienceWindStop" ObjectPath="\Events\Default Work Unit\AmbienceWindStop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1116398592" Name="Hit" ObjectPath="\Events\Default Work Unit\Hit" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3011204530" Name="Move" ObjectPath="\Events\Default Work Unit\Stingers\Move" DurationType="OneShot" DurationMin="1.654082" DurationMax="1.758118"/>
+				<Event Id="2715854868" Name="PowerDown" ObjectPath="\Events\Default Work Unit\PowerDown" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3950429679" Name="PowerUp" ObjectPath="\Events\Default Work Unit\PowerUp" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="86513517" Language="SFX">
+					<ShortName>WingBat-003.wav</ShortName>
+					<Path>SFX\WingBat-003_10C4C929.wem</Path>
+				</File>
+				<File Id="99654240" Language="SFX">
+					<ShortName>Wind.wav</ShortName>
+					<Path>SFX\Wind_D2FE4B70.wem</Path>
+				</File>
+				<File Id="188278435" Language="SFX">
+					<ShortName>WingBat-002.wav</ShortName>
+					<Path>SFX\WingBat-002_10C4C929.wem</Path>
+				</File>
+				<File Id="285283810" Language="SFX">
+					<ShortName>WingBat-004.wav</ShortName>
+					<Path>SFX\WingBat-004_10C4C929.wem</Path>
+				</File>
+				<File Id="472236614" Language="SFX">
+					<ShortName>Wind.wav</ShortName>
+					<Path>SFX\Wind_06853A03.wem</Path>
+				</File>
+				<File Id="533899522" Language="SFX">
+					<ShortName>WingBat-001.wav</ShortName>
+					<Path>SFX\WingBat-001_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
