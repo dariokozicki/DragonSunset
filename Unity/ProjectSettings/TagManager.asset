@@ -4,9 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - tagContractInfo
   - Bloque
   - Food
   - Perro
+  - Enemy
+  - Point
   layers:
   - Default
   - TransparentFX

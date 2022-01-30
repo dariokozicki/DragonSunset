@@ -8,7 +8,8 @@ public class GetAccount : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myAccount.text = PlayerPrefs.GetString("Account");
+        myAccount.text = string.IsNullOrEmpty(PlayerPrefs.GetString("Account")) ?
+        "No wallet selected" : PlayerPrefs.GetString("Account");
     }
 
     // Update is called once per frame
