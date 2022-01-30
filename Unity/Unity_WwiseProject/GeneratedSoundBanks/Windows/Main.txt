@@ -13,8 +13,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	188278435	WingBat-002	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-002		145954
 	285283810	WingBat-004	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-004		148236
 	296831369	Hats	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Hats_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Harmonic\Hats		5890292
+	311992833	PowerUp	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\PowerUp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\PowerUp\PowerUp		92970
 	472236614	Wind	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Wind_06853A03.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind\Wind		4158044
 	533899522	WingBat-001	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-001		151268
 	714651370	Harmonic	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Harmonic_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Harmonic\Harmonic		5890292
-	938143371	PowerDown	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\PowerDown_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\Hit\PowerDown		48396
+	992148684	PowerDown-001	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\PowerDown-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\Hit\PowerDown-001		48396
 

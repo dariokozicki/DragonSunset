@@ -16,12 +16,19 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="627361670">
+		<SoundBank Id="3161908922" Language="SFX" Hash="424853134">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1059305220" Name="AddPoint" ObjectPath="\Events\Default Work Unit\AddPoint" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1059305220" Name="AddPoint" ObjectPath="\Events\Default Work Unit\AddPoint" DurationType="OneShot" DurationMin="1.053356" DurationMax="1.053356">
+					<IncludedMemoryFiles>
+						<File Id="311992833" Language="SFX">
+							<ShortName>PowerUp.wav</ShortName>
+							<Path>SFX\PowerUp_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3709115519" Name="AmbienceWind" ObjectPath="\Events\Default Work Unit\AmbienceWind" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="99654240" Language="SFX">
@@ -36,7 +43,14 @@
 				</Event>
 				<Event Id="3233130319" Name="AmbienceWindStop" ObjectPath="\Events\Default Work Unit\AmbienceWindStop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="221232726" Name="Lose" ObjectPath="\Events\Default Work Unit\Lose" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2508548636" Name="losePoint" ObjectPath="\Events\Default Work Unit\losePoint" DurationType="OneShot" DurationMin="0.547982" DurationMax="0.547982"/>
+				<Event Id="2508548636" Name="losePoint" ObjectPath="\Events\Default Work Unit\losePoint" DurationType="OneShot" DurationMin="0.547982" DurationMax="0.547982">
+					<IncludedMemoryFiles>
+						<File Id="992148684" Language="SFX">
+							<ShortName>PowerDown-001.wav</ShortName>
+							<Path>SFX\PowerDown-001_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3011204530" Name="Move" ObjectPath="\Events\Default Work Unit\Stingers\Move" DurationType="OneShot" DurationMin="1.654082" DurationMax="1.758118">
 					<IncludedMemoryFiles>
 						<File Id="86513517" Language="SFX">
@@ -87,6 +101,10 @@
 					<ShortName>WingBat-004.wav</ShortName>
 					<Path>SFX\WingBat-004_10C4C929.wem</Path>
 				</File>
+				<File Id="311992833" Language="SFX">
+					<ShortName>PowerUp.wav</ShortName>
+					<Path>SFX\PowerUp_10C4C929.wem</Path>
+				</File>
 				<File Id="472236614" Language="SFX">
 					<ShortName>Wind.wav</ShortName>
 					<Path>SFX\Wind_06853A03.wem</Path>
@@ -95,9 +113,9 @@
 					<ShortName>WingBat-001.wav</ShortName>
 					<Path>SFX\WingBat-001_10C4C929.wem</Path>
 				</File>
-				<File Id="938143371" Language="SFX">
-					<ShortName>PowerDown.wav</ShortName>
-					<Path>SFX\PowerDown_10C4C929.wem</Path>
+				<File Id="992148684" Language="SFX">
+					<ShortName>PowerDown-001.wav</ShortName>
+					<Path>SFX\PowerDown-001_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
