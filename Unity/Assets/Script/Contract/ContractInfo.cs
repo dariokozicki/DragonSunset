@@ -53,6 +53,7 @@ public class ContractInfo : MonoBehaviour
         foreach (int id in ids) {
             playerScores.Add(await getPlayerScore(id));
         }
+        playerScores.Sort((a, b) => b.value.CompareTo(a.value));
         return playerScores;
     }
 
