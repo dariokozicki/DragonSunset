@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnWallScript : MonoBehaviour
 {
-    [SerializeField]GameObject enemyWall;
+    [SerializeField] GameObject enemyWall;
     GameObject prefab;
     public float rotacionActual;
     void Start()
