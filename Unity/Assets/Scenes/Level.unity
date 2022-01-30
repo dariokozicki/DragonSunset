@@ -971,6 +971,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 958212076813739409, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
+      propertyPath: m_TagString
+      value: Tail
+      objectReference: {fileID: 0}
     - target: {fileID: 958212076813739412, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -993,7 +997,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958212077232675595, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958212077232675601, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
+      propertyPath: m_TagString
+      value: Tail
       objectReference: {fileID: 0}
     - target: {fileID: 958212077232675604, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
       propertyPath: m_Sprite
@@ -1057,7 +1065,7 @@ PrefabInstance:
       objectReference: {fileID: 1039238945}
     - target: {fileID: 958212078209067975, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 958212078209067981, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
       propertyPath: m_Layer
@@ -1065,11 +1073,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958212078289587754, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 958212078289587754, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
       propertyPath: colorWhite
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 958212078289587760, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
+      propertyPath: m_TagString
+      value: Tail
       objectReference: {fileID: 0}
     - target: {fileID: 958212078289587764, guid: 2fc11fd524c354c4da26526b905019fb, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -1109,9 +1121,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958212077421199227}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffb1b774c8cb1f348a6a54d8ee9f564c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorWhite: 0
+  OnColorChange:
+    m_PersistentCalls:
+      m_Calls: []

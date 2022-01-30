@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ColorChange : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class ColorChange : MonoBehaviour
     public bool colorWhite;
     SpriteRenderer spriteRenderer;
     Animator animator;
+
+    public UnityEvent OnColorChange = new UnityEvent();
+
+    ColorChange playerColor;
 
     void Start()
     {
@@ -30,8 +35,15 @@ public class ColorChange : MonoBehaviour
         {
             playerControl = true;
             Debug.Log("Soy El Player");
-        }   else 
-        
+        }   else if(gameObject.tag == "Tail") 
+        {
+            playerControl = false;
+            Debug.Log("No soy El Player");
+            playerColor = GameObject.FindGameObjectWithTag("Player").GetComponent<ColorChange>();
+            playerColor.OnColorChange.AddListener(OnSameColor);
+            
+        }
+        else
         {
             playerControl = false;
             Debug.Log("No soy El Player");
@@ -39,22 +51,28 @@ public class ColorChange : MonoBehaviour
             playerScript.OnAddPoint.AddListener(OnColorSelect);
         }
 
+
         colorWhite = animator.GetBool("colorWhite");
         OnColorSelect();
     }
 
     private void Update()
     {
-        if(playerControl == true) 
+        if (playerControl == true) 
         {
             if (Input.GetKeyDown(KeyCode.Space)) 
             {
-                ChangeColorManual();
+                OnChangeColorManual();
             }
         }
     }
 
-    void ChangeColorManual() 
+    private void OnSameColor() 
+    {
+        colorWhite = playerColor.colorWhite;
+    }
+
+    void OnChangeColorManual() 
     {
     
         if(colorWhite == true) 
@@ -66,6 +84,8 @@ public class ColorChange : MonoBehaviour
             colorWhite = true;
             animator.SetBool("ColorWhite", colorWhite);
         }
+
+        OnColorChange.Invoke();
 
     }
     
