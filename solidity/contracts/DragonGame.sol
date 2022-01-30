@@ -23,6 +23,7 @@ contract DragonGame {
         require(theScore.value < _value, "The score is not higher than previous ones for that user.");
         playerToScore[msg.sender] = scoreId;
         theScore.value = _value;
+        // solhint-disable-next-line
         theScore.timestamp = block.timestamp;
         theScore.durationMillis = _durationMillis;
         theScore.name = _name;

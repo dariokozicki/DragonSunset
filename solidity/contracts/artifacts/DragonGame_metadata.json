@@ -179,11 +179,11 @@
 	},
 	"sources": {
 		"contracts/DragonGame.sol": {
-			"keccak256": "0xf0a10bd6babfbf76ecfcbfc7473762fbad07810bc376c652bda6686b64fd2015",
+			"keccak256": "0x2e645e3c3893e7c30ff5438739e8a80dabc15e871c7710b25fc64d6916ab08a3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c5702db9e3220f0b76a989234d8ebd4da3ae023be132fe69684c24705dc43bca",
-				"dweb:/ipfs/QmStaB2qZbY3w56NDaMfMRi7NWiBP5TifdjaKUTeevtXmy"
+				"bzz-raw://9b7d2d7799a36c16d3dc28145f296a4ce1192de56f5ffa3d977902c7ef0aab20",
+				"dweb:/ipfs/QmY1MoKoMuFkTho4YyVsZMVgfukcTn8u7MZs6HwRo6DLMK"
 			]
 		}
 	},
