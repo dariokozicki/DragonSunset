@@ -6,7 +6,9 @@ public class SpawnWallScript : MonoBehaviour
 {
     [SerializeField] GameObject enemyWall;
     GameObject prefab;
-    public float rotacionActual;
+    [SerializeField] GameObject enemeyParent;
+    
+    public float rotacionActual;  
 
     public float timerActual;
     public float timerMax;
@@ -45,11 +47,14 @@ public class SpawnWallScript : MonoBehaviour
         rotacionActual += 90;
         Debug.Log(rotacionActual);
         
-        Instantiate(prefab);
+        Instantiate(prefab,enemeyParent.transform);
+        
 
         prefab.transform.position = Vector2.zero;
         prefab.transform.position += new Vector3(Random.Range(-5.5f, 5.5f), Random.Range(-3f, 3f));
         prefab.transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotacionActual));
         
     }
+
+    
 }

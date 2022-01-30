@@ -5,10 +5,25 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     ColorChange colorChange;
-    public float timeToDestroy = 1f;
+    public float timeToDestroy = .1f;
     [SerializeField] GameObject parent;
+    [SerializeField] GameObject GameManager;
+    GamaManager gameManagerScript;
     void Start()
     {
+       GameObject GamaManager = GameObject.FindGameObjectWithTag("GameManager");
+
+        if(GameManager != null) 
+        {
+            gameManagerScript = GamaManager.GetComponent<GamaManager>();
+
+        }
+
+        if(gameManagerScript != null) 
+        {
+           // gameManagerScript.OnLose.AddListener(OnDestroy);
+        }
+
         colorChange = GetComponent<ColorChange>(); 
         if(colorChange == null) 
         {
@@ -35,6 +50,8 @@ public class EnemyScript : MonoBehaviour
             
         }
     }
+
+
 
     private void OnDeath()
     {

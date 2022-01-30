@@ -10,6 +10,7 @@ TagManager:
   - Perro
   - Enemy
   - Point
+  - GameManager
   layers:
   - Default
   - TransparentFX

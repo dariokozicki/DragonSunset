@@ -39,7 +39,7 @@ public class ColorChange : MonoBehaviour
             playerScript.OnAddPoint.AddListener(OnColorSelect);
         }
 
-
+        colorWhite = animator.GetBool("colorWhite");
     }
 
     private void Update()

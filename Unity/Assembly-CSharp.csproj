@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20SymbolExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721URIExample.cs" />
+    <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer721.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSignMessageExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721OwnerOfExample.cs" />
@@ -82,11 +83,13 @@
     <Compile Include="Assets\Script\ColorChange.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\TxStatus.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomCallExample.cs" />
-    <Compile Include="Assets\SpawnWallScript.cs" />
+    <Compile Include="Assets\Script\SpawnWallScript.cs" />
     <Compile Include="Assets\Script\Contract\ContractInfo.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer20Example.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer20.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer1155Example.cs" />
+    <Compile Include="Assets\Script\GamaManager.cs" />
+    <Compile Include="Assets\EnemyScript.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\EthBalanceOfExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSendTransactionExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletLogOut.cs" />
@@ -97,6 +100,7 @@
     <Compile Include="Assets\Web3Unity\Scripts\Library\ERC20.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155BalanceOfBatchExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20NameExample.cs" />
+    <Compile Include="Assets\Script\Contract\Help.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Library\ERC721.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Library\Web3Wallet.cs" />
     <Compile Include="Assets\Script\FoodScript.cs" />
@@ -107,7 +111,7 @@
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendContractExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CreateContractDataExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
-    <Compile Include="Assets\EnemyScript.cs" />
+    <Compile Include="Assets\EnemyManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

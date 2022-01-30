@@ -28,10 +28,35 @@ public class PlayerScript : MonoBehaviour
 	public UnityEvent OnAddPoint = new UnityEvent();
 	public UnityEvent OnDamage = new UnityEvent();
 
+	GameObject GameManager;
+	GamaManager gameManagerScript;
+
+	ColorChange playerColor;
+
+	public Transform initialPosition;
+
 	private void Start()
 	{
+		transform.position = initialPosition.position;
+
+		playerColor = GetComponent<ColorChange>();
+
 		InvokeRepeating("Move", frameRate, frameRate);
 		myCollider = GetComponent<Collider2D>();
+
+		GameObject GamaManager = GameObject.FindGameObjectWithTag("GameManager");
+
+		if (GameManager != null)
+		{
+			gameManagerScript = GamaManager.GetComponent<GamaManager>();
+
+		}
+
+		if (gameManagerScript != null)
+		{
+			gameManagerScript.OnLose.AddListener(OnRestart);
+			
+		}
 
 	}
 
@@ -88,7 +113,15 @@ public class PlayerScript : MonoBehaviour
     {
         if(collision.CompareTag("Bloque")) 
 		{
-			Damage();
+			ColorChange enemyColor = collision.GetComponent<ColorChange>();	
+			if(enemyColor != null) 
+			{
+				if(enemyColor.colorWhite == true && playerColor.colorWhite == false || enemyColor.colorWhite == false && playerColor.colorWhite == true) 
+				{
+					Damage();
+				}
+			}
+			
 		} 
 		else if (collision.CompareTag("Point")) 
 		{
@@ -99,7 +132,14 @@ public class PlayerScript : MonoBehaviour
 	void Damage() 
 	{
 		Debug.Log("perdiste");
+		
 		OnDamage.Invoke();
+		transform.position = initialPosition.position;
+	}
+
+	void OnRestart() 
+	{
+		
 	}
 	
 }
