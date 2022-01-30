@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}</ProjectGuid>
+    <ProjectGuid>{117555B5-AE83-755A-AAD2-47411D631087}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>AK.Wwise.Unity.API</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -53,62 +53,141 @@
     <UnityVersion>2020.3.26f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20SymbolExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721URIExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer721.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSignMessageExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721OwnerOfExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155BalanceOfExample.cs" />
-    <Compile Include="Assets\Script\PlayerScript.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Scenes\WalletLogin.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer721Example.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20DecimalsExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendTransactionExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Library\EVM.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Scenes\WebLogin.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721BalanceOfExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\VerifyExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\AllErc1155Example.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155URIExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignOut.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20TotalSupplyExample.cs" />
-    <Compile Include="Assets\Web3Unity\Prefabs\ERC1155\ImportNFTTextureExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomRPCExample.cs" />
-    <Compile Include="Assets\Script\GetAccount.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer1155.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\BlockNumberExample.cs" />
-    <Compile Include="Assets\Ejemplito.cs" />
-    <Compile Include="Assets\Script\ColorChange.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\TxStatus.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomCallExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer20Example.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer20.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer1155Example.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\EthBalanceOfExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSendTransactionExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletLogOut.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\AllErc721Example.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Library\ERC1155.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignMessageExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Library\ERC20.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155BalanceOfBatchExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20NameExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Library\ERC721.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Library\Web3Wallet.cs" />
-    <Compile Include="Assets\Script\FoodScript.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Library\WebGL\Web3GL.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721OwnerOfBatchExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20BalanceOfExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendContractExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CreateContractDataExample.cs" />
-    <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
-    <Compile Include="Assets\Script\PointScript.cs" />
-    <Compile Include="Assets\SpawnWallScript.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkGlobalCallbackLocation.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkAudioFormat.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Windows\AkThreadProperties_Windows.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Mac\AkSoundEngine.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkSoundEngine.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkVertex.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkTriangleArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMIDIEventTypes.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Windows\AkUnityPlatformSpecificSettings_Windows.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkUtilities.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\Ak3dData.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkAcousticSurface.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Windows\AkWindowsSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkGroupType.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMIDIEventCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkCommonPlatformSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkAudioObjectDestination.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Windows\AkPlatformInitSettings_Windows.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkDurationCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkDiffractionPathInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkPlaylist.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkQueryRTPCValue.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMonitorErrorCode.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkOutputSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Mac\AkPlatformInitSettings_Mac.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkTriangle.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkChannelConfigType.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkAcousticSurfaceArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkSourceSettingsArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkPlaylistArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkWwiseEditorSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkExternalSourceInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkWwiseFileWatcher.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Mac\AkThreadProperties_Mac.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkRamp.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkBusHierarchyFlags.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkWwiseInitializationSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Windows\AkSoundEngine_Windows.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkAudioInputManager.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkCallbackType.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkDeviceSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMonitoringCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkReflectionPathInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkPluginType.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkTransform.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMIDIPost.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Mac\AkMacBasePathGetter.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkAudioSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\Ak3DPositionType.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkBaseArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkBankManager.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkInitializationSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMarkerCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkTaskContext.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\AkSoundEngine.extensions.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Mac\AkMacSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkVector.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\Ak3DAudioSinkCapabilities.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkAuxSendValue.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkSegmentInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkShowOnlyAttribute.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMonitorErrorLevel.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkObstructionOcclusionValues.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Mac\AkUnityPlatformSpecificSettings_Mac.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkPositioningInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkPositioningData.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkSpatialAudioInitSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkPositionArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkAuxSendArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkBankContent.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkPlaylistItem.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkDynamicSequenceType.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkAudioSourceChangeCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkAudioInterruptionCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMusicSyncCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkChannelConfig.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkChannelEmitterArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkInitSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMusicSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkDiffractionPathInfoArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMIDIEvent.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkObstructionOcclusionValuesArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkRoomParams.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Windows\AkWindowsBasePathGetter.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkPanningRule.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkBasePathGetter.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkCallbackSerializer.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkExtent.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkMIDIPostArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Windows\AkCommunicationSettings_Windows.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkIterator.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkObjectInfoArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkExternalSourceInfoArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkReflectionPathInfoArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkStreamMgrSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkBehavioralPositioningData.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMusicPlaylistCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkLogger.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkSerializedCallbackHeader.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkChannelEmitter.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkAudioDeviceState.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkSourceChannelOrdering.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Windows\AkSoundEngine.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkImageSourceParams.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkSourceSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\Arrays\AkDeviceDescriptionArray.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkEventCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkActionOnEventType.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkConnectionType.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Mac\AkSoundEnginePINVOKE_Mac.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkDynamicSequenceItemCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Windows\AkSoundEnginePINVOKE_Windows.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMultiPositionType.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkChannelOrdering.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkEnumFlagAttribute.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkImageSourceSettings.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Mac\AkSoundEngine_Mac.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkBankCallbackInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AKRESULT.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkObjectInfo.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkFloorPlane.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMeteringFlags.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkPreparationType.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkDeviceDescription.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Handwritten\Common\AkCallbackManager.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Mac\AkCommunicationSettings_Mac.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkMIDICcTypes.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkCurveInterpolation.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\Ak3DSpatializationMode.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkResourceMonitorDataSummary.cs" />
+    <Compile Include="Assets\Wwise\API\Runtime\Generated\Common\AkSpeakerPanningType.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\StreamingAssets\desc.txt" />
-    <None Include="Assets\Wwise\Version.txt" />
-    <None Include="Assets\WwiseSettings.xml" />
+    <None Include="Assets\Wwise\API\Runtime\AK.Wwise.Unity.API.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -332,6 +411,27 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
@@ -681,134 +781,14 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="PsdPlugin">
-      <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.IK.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{2662B409-6332-1E56-D797-C9025C53BDD6}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="Ak.Wwise.Api.WAAPI.csproj">
-      <Project>{0B22EFDE-CDF1-D681-5489-6A69BE02EF19}</Project>
-      <Name>Ak.Wwise.Api.WAAPI</Name>
-    </ProjectReference>
-    <ProjectReference Include="AK.Wwise.Unity.MonoBehaviour.csproj">
-      <Project>{4FFE8EA1-6F31-1647-ECC2-BB062365CD84}</Project>
-      <Name>AK.Wwise.Unity.MonoBehaviour</Name>
-    </ProjectReference>
-    <ProjectReference Include="AK.Wwise.Unity.Timeline.Editor.csproj">
-      <Project>{813E4926-B032-9FCB-9509-E6FFACC3E388}</Project>
-      <Name>AK.Wwise.Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="AK.Wwise.Unity.API.Editor.csproj">
-      <Project>{026B0590-4CB1-CE68-6795-1EFC538462CB}</Project>
-      <Name>AK.Wwise.Unity.API.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="AK.Wwise.Unity.Timeline.csproj">
-      <Project>{1E83CEF3-C750-0919-D021-26CA0208FB45}</Project>
-      <Name>AK.Wwise.Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="AK.Wwise.Unity.API.csproj">
-      <Project>{117555B5-AE83-755A-AAD2-47411D631087}</Project>
-      <Name>AK.Wwise.Unity.API</Name>
-    </ProjectReference>
-    <ProjectReference Include="AK.Wwise.Unity.API.WwiseTypes.csproj">
-      <Project>{BDDE03F3-DE3E-3852-D268-7C9D1DE0C138}</Project>
-      <Name>AK.Wwise.Unity.API.WwiseTypes</Name>
-    </ProjectReference>
-    <ProjectReference Include="AK.Wwise.Unity.MonoBehaviour.Editor.csproj">
-      <Project>{C07B5ECD-9D9E-A648-7A8E-26758C634F28}</Project>
-      <Name>AK.Wwise.Unity.MonoBehaviour.Editor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
