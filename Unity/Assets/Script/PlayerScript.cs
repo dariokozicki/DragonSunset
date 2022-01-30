@@ -16,10 +16,10 @@ public class PlayerScript : MonoBehaviour
 	Direction direction;
 
 	Vector3 lastPos;
-	
+	Quaternion lastRotation;
 	public float frameRate = 0.2f;
 	public float step = 0.1f;
-	//tamaño del cuadrado
+	//tamaï¿½o del cuadrado
 
 	public List<Transform> Tail = new List<Transform>();
 
@@ -40,7 +40,7 @@ public class PlayerScript : MonoBehaviour
 	private void Start()
 	{
 		transform.position = initialPosition.position;
-
+		direction = Direction.up;
 		playerColor = GetComponent<ColorChange>();
 
 		InvokeRepeating("Move", frameRate, frameRate);
@@ -64,10 +64,12 @@ public class PlayerScript : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.UpArrow))
-		{ direction = Direction.up; }
+		if (Input.GetKeyDown(KeyCode.UpArrow)){ 
+			direction = Direction.up; }
 		else if (Input.GetKeyDown(KeyCode.DownArrow))
-		{ direction = Direction.down; }
+		{ 
+			direction = Direction.down; 
+		}
 		else if (Input.GetKeyDown(KeyCode.LeftArrow))
 		{ direction = Direction.left; }
 		else if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -77,16 +79,25 @@ public class PlayerScript : MonoBehaviour
 	void Move()
 	{
 		lastPos = transform.position;
+		lastRotation = transform.rotation;
 
 		Vector3 nextPos = Vector3.zero;
-		if (direction == Direction.up)
+		if (direction == Direction.up){
 			nextPos = Vector3.up;
-		else if (direction == Direction.down)
+			transform.rotation = Quaternion.Euler(new Vector3(0, 0, 90));
+		}
+		else if (direction == Direction.down){
 			nextPos = Vector3.down;
-		else if (direction == Direction.left)
+			transform.rotation = Quaternion.Euler(new Vector3(0, 0, 270));
+		}
+		else if (direction == Direction.left){
 			nextPos = Vector3.left;
-		else if (direction == Direction.right)
+			transform.rotation = Quaternion.Euler(new Vector3(0, 0, 180));
+		}
+		else if (direction == Direction.right){
 			nextPos = Vector3.right;
+			transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+		}
 		nextPos *= step;
 
 		transform.position += nextPos;
@@ -100,6 +111,7 @@ public class PlayerScript : MonoBehaviour
 		{
 			Vector3 temp = Tail[i].position;
 			Tail[i].position = lastPos;
+			Tail[i].rotation = lastRotation;
 			lastPos = temp;
 		}
 
@@ -118,7 +130,7 @@ public class PlayerScript : MonoBehaviour
 			ColorChange enemyColor = collision.GetComponent<ColorChange>();	
 			if(enemyColor != null) 
 			{
-				if(enemyColor.colorWhite == true && playerColor.colorWhite == false || enemyColor.colorWhite == false && playerColor.colorWhite == true) 
+				if(enemyColor.colorWhite != playerColor.colorWhite) 
 				{
 					Damage();
 				}
