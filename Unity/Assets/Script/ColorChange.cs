@@ -5,7 +5,7 @@ using UnityEngine;
 public class ColorChange : MonoBehaviour
 {
     bool playerControl;
-    bool colorWhite;
+    public bool colorWhite;
     SpriteRenderer spriteRenderer;
     Animator animator;
 
@@ -30,11 +30,32 @@ public class ColorChange : MonoBehaviour
 
     }
 
-    
-    void Update()
+    private void Update()
     {
-        
+        if(playerControl == true) 
+        {
+            if (Input.GetKeyDown(KeyCode.Space)) 
+            {
+                ChangeColorManual();
+            }
+        }
     }
+
+    void ChangeColorManual() 
+    {
+    
+        if(colorWhite == true) 
+        {
+            colorWhite = false;
+            animator.SetBool("ColorWhite", colorWhite);
+        } else if(colorWhite == false)
+        {
+            colorWhite = true;
+            animator.SetBool("ColorWhite", colorWhite);
+        }
+
+    }
+    
 
     void OnColorSelect() 
     {

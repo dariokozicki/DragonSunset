@@ -86,11 +86,11 @@ public class PlayerScript : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Perro")) 
+        if(collision.CompareTag("Bloque")) 
 		{
 			Damage();
 		} 
-		else if (collision.CompareTag("Food")) 
+		else if (collision.CompareTag("Point")) 
 		{
 			AddPoint();
 		};
