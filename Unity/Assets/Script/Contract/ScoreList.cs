@@ -32,6 +32,11 @@ public class ScoreList : MonoBehaviour
             boardRt.sizeDelta.x, 
             Mathf.Max(((RectTransform)transform).rect.height, scoreboard.Count * scoreHeight)
         );
+        /*try {
+            await contractInfo.setScore(20, "amiguito", 1234);
+        } catch (System.Exception e) {
+            print(e);
+        }*/
     }
 
     // Update is called once per frame
