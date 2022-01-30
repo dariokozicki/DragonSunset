@@ -6,6 +6,7 @@ public class EnemyManager : MonoBehaviour
 {
     [SerializeField] GameObject GameManager;
     GameManager gameManagerScript;
+
     void Start()
     {
         GameObject GameManager = GameObject.FindGameObjectWithTag("GameManager");
@@ -18,11 +19,11 @@ public class EnemyManager : MonoBehaviour
         if (gameManagerScript != null)
         {
             gameManagerScript.OnLose.AddListener(OnDestroy);
-        }
-
+        }        
+       
     }
 
-
+    
     private void OnDestroy()
     {
         Destroy(gameObject);

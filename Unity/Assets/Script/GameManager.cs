@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     public UnityEvent OnLose = new UnityEvent();
     float totalLife;
-    float actualLife;
+    float actualLife = 3;
 
     void Start()
     {
@@ -41,6 +42,6 @@ public class GameManager : MonoBehaviour
 
     public void Defeat() 
     {
-    
+        SceneManager.LoadScene("GameScene");
     }
 }

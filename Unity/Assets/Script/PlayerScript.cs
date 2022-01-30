@@ -65,13 +65,22 @@ public class PlayerScript : MonoBehaviour
 	private void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.UpArrow))
-		{ direction = Direction.up; }
+		{ 
+			direction = Direction.up;
+			AkSoundEngine.PostEvent("Move", gameObject);
+		}
 		else if (Input.GetKeyDown(KeyCode.DownArrow))
-		{ direction = Direction.down; }
+		{ direction = Direction.down;
+			AkSoundEngine.PostEvent("Move", gameObject);
+		}
 		else if (Input.GetKeyDown(KeyCode.LeftArrow))
-		{ direction = Direction.left; }
+		{ direction = Direction.left;
+			AkSoundEngine.PostEvent("Move", gameObject);
+		}
 		else if (Input.GetKeyDown(KeyCode.RightArrow))
-		{ direction = Direction.right; }
+		{ direction = Direction.right;
+			AkSoundEngine.PostEvent("Move", gameObject);
+		}
 	}
 
 	void Move()
