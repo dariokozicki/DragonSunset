@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2307233046">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="424853134">
+		<SoundBank Id="3161908922" Language="SFX" Hash="262880400">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -73,15 +73,48 @@
 				</Event>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="296831369" Language="SFX">
-							<ShortName>Hats.wav</ShortName>
-							<Path>SFX\Hats_D79FB2B7.wem</Path>
+						<File Id="350781152" Language="SFX">
+							<ShortName>Hats-002.wav</ShortName>
+							<Path>SFX\Hats-002_D79FB2B7.wem</Path>
 						</File>
-						<File Id="714651370" Language="SFX">
-							<ShortName>Harmonic.wav</ShortName>
-							<Path>SFX\Harmonic_D79FB2B7.wem</Path>
+						<File Id="597816016" Language="SFX">
+							<ShortName>Harmony2-002.wav</ShortName>
+							<Path>SFX\Harmony2-002_D79FB2B7.wem</Path>
+						</File>
+						<File Id="627543909" Language="SFX">
+							<ShortName>Lose.wav</ShortName>
+							<Path>SFX\Lose_D79FB2B7.wem</Path>
+						</File>
+						<File Id="984503807" Language="SFX">
+							<ShortName>Harmony1.wav</ShortName>
+							<Path>SFX\Harmony1_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{382783D9-9FDC-4A32-BD4A-3F462962A238}">
+							<Media>
+								<File Id="350781152"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{83F8DF39-AD61-462A-B36F-AE061F841D0A}">
+							<Media>
+								<File Id="350781152"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F8E16B5F-EB71-4A7C-8177-FBE4A73F99FA}">
+							<Media>
+								<File Id="350781152"/>
+								<File Id="597816016"/>
+								<File Id="984503807"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2A275989-C288-4E6C-BA06-DF3FFB84AE1D}">
+							<Media>
+								<File Id="350781152"/>
+								<File Id="627543909"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -118,6 +151,16 @@
 					<Path>SFX\PowerDown-001_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="1038839729" Name="BgMusic" ObjectPath="\States\Default Work Unit\BgMusic" GUID="{E0FB65F9-9F07-4DFB-90A6-E509E0C01F47}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\BgMusic\None" GUID="{83F8DF39-AD61-462A-B36F-AE061F841D0A}"/>
+						<State Id="2607556080" Name="Menu" ObjectPath="\States\Default Work Unit\BgMusic\Menu" GUID="{382783D9-9FDC-4A32-BD4A-3F462962A238}"/>
+						<State Id="1256202815" Name="Play" ObjectPath="\States\Default Work Unit\BgMusic\Play" GUID="{F8E16B5F-EB71-4A7C-8177-FBE4A73F99FA}"/>
+						<State Id="221232726" Name="Lose" ObjectPath="\States\Default Work Unit\BgMusic\Lose" GUID="{2A275989-C288-4E6C-BA06-DF3FFB84AE1D}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

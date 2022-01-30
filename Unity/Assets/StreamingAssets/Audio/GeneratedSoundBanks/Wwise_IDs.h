@@ -22,6 +22,23 @@ namespace AK
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace BGMUSIC
+        {
+            static const AkUniqueID GROUP = 1038839729U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LOSE = 221232726U;
+                static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PLAY = 1256202815U;
+            } // namespace STATE
+        } // namespace BGMUSIC
+
+    } // namespace STATES
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

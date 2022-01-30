@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A17E42D0-541B-4955-970C-270F5B0DA6B5}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{A17E42D0-541B-4955-970C-270F5B0DA6B5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A17E42D0-541B-4955-970C-270F5B0DA6B5}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="BgMusic" ID="{E0FB65F9-9F07-4DFB-90A6-E509E0C01F47}">
+					<ChildrenList>
+						<State Name="None" ID="{83F8DF39-AD61-462A-B36F-AE061F841D0A}"/>
+						<State Name="Menu" ID="{382783D9-9FDC-4A32-BD4A-3F462962A238}"/>
+						<State Name="Play" ID="{F8E16B5F-EB71-4A7C-8177-FBE4A73F99FA}"/>
+						<State Name="Lose" ID="{2A275989-C288-4E6C-BA06-DF3FFB84AE1D}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Menu" ID="{382783D9-9FDC-4A32-BD4A-3F462962A238}"/>
+							<EndState Name="Play" ID="{F8E16B5F-EB71-4A7C-8177-FBE4A73F99FA}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Play" ID="{F8E16B5F-EB71-4A7C-8177-FBE4A73F99FA}"/>
+							<EndState Name="Lose" ID="{2A275989-C288-4E6C-BA06-DF3FFB84AE1D}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Lose" ID="{2A275989-C288-4E6C-BA06-DF3FFB84AE1D}"/>
+							<EndState Name="Play" ID="{F8E16B5F-EB71-4A7C-8177-FBE4A73F99FA}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Lose" ID="{2A275989-C288-4E6C-BA06-DF3FFB84AE1D}"/>
+							<EndState Name="Menu" ID="{382783D9-9FDC-4A32-BD4A-3F462962A238}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
