@@ -69,17 +69,21 @@
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721BalanceOfExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\VerifyExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\AllErc1155Example.cs" />
+    <Compile Include="Assets\Script\PointScript.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC1155\ERC1155URIExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignOut.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20TotalSupplyExample.cs" />
     <Compile Include="Assets\Web3Unity\Prefabs\ERC1155\ImportNFTTextureExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomRPCExample.cs" />
+    <Compile Include="Assets\Script\Contract\PlayerScore.cs" />
     <Compile Include="Assets\Script\Contract\GetAccount.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer1155.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\BlockNumberExample.cs" />
     <Compile Include="Assets\Script\ColorChange.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\TxStatus.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CustomCallExample.cs" />
+    <Compile Include="Assets\SpawnWallScript.cs" />
+    <Compile Include="Assets\Script\Contract\ContractInfo.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer20Example.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLTransfer20.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletTransfer1155Example.cs" />
@@ -87,6 +91,7 @@
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletSendTransactionExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\Wallet\Web3WalletLogOut.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\AllErc721Example.cs" />
+    <Compile Include="Assets\Script\Contract\ScoreList.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Library\ERC1155.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSignMessageExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Library\ERC20.cs" />
@@ -98,15 +103,11 @@
     <Compile Include="Assets\Web3Unity\Scripts\Library\WebGL\Web3GL.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC721\ERC721OwnerOfBatchExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\ERC20\ERC20BalanceOfExample.cs" />
+    <Compile Include="Assets\Script\GoTo.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\WebGL\WebGLSendContractExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\CreateContractDataExample.cs" />
     <Compile Include="Assets\Web3Unity\Scripts\Prefabs\EVM\NonceExample.cs" />
-    <Compile Include="Assets\Script\PointScript.cs" />
-    <Compile Include="Assets\SpawnWallScript.cs" />
-    <Compile Include="Assets\Script\GoTo.cs" />
-    <Compile Include="Assets\Script\Contract\PlayerScore.cs" />
-    <Compile Include="Assets\Script\Contract\ScoreList.cs" />
-    <Compile Include="Assets\Script\Contract\ContractInfo.cs" />
+    <Compile Include="Assets\EnemyScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -126,6 +127,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Wwise\NewVersion.txt" />
     <None Include="Assets\WwiseSettings.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -747,9 +749,6 @@
     <Reference Include="Unity.2D.Path.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -758,6 +757,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
@@ -801,17 +803,9 @@
       <Project>{2662B409-6332-1E56-D797-C9025C53BDD6}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
-    <ProjectReference Include="Ak.Wwise.Api.WAAPI.csproj">
-      <Project>{0B22EFDE-CDF1-D681-5489-6A69BE02EF19}</Project>
-      <Name>Ak.Wwise.Api.WAAPI</Name>
-    </ProjectReference>
     <ProjectReference Include="AK.Wwise.Unity.MonoBehaviour.csproj">
       <Project>{4FFE8EA1-6F31-1647-ECC2-BB062365CD84}</Project>
       <Name>AK.Wwise.Unity.MonoBehaviour</Name>
-    </ProjectReference>
-    <ProjectReference Include="AK.Wwise.Unity.Timeline.Editor.csproj">
-      <Project>{813E4926-B032-9FCB-9509-E6FFACC3E388}</Project>
-      <Name>AK.Wwise.Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="AK.Wwise.Unity.API.Editor.csproj">
       <Project>{026B0590-4CB1-CE68-6795-1EFC538462CB}</Project>
@@ -820,6 +814,14 @@
     <ProjectReference Include="AK.Wwise.Unity.Timeline.csproj">
       <Project>{1E83CEF3-C750-0919-D021-26CA0208FB45}</Project>
       <Name>AK.Wwise.Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Ak.Wwise.Api.WAAPI.csproj">
+      <Project>{0B22EFDE-CDF1-D681-5489-6A69BE02EF19}</Project>
+      <Name>Ak.Wwise.Api.WAAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="AK.Wwise.Unity.Timeline.Editor.csproj">
+      <Project>{813E4926-B032-9FCB-9509-E6FFACC3E388}</Project>
+      <Name>AK.Wwise.Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="AK.Wwise.Unity.API.csproj">
       <Project>{117555B5-AE83-755A-AAD2-47411D631087}</Project>
