@@ -7,6 +7,10 @@ public class SpawnWallScript : MonoBehaviour
     [SerializeField] GameObject enemyWall;
     GameObject prefab;
     public float rotacionActual;
+
+    public float timerActual;
+    public float timerMax;
+
     void Start()
     {
        prefab = enemyWall;
@@ -15,10 +19,24 @@ public class SpawnWallScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        timerActual += Time.deltaTime;
+
+        if(timerActual >= timerMax) 
+        {
+
+            timerActual = 0;
+            CreateEnemy();
+        
+        }
+
         if (Input.GetKeyDown(KeyCode.Z)) 
         {
             CreateEnemy();
         }
+
+
+        
     }
 
     void CreateEnemy() 

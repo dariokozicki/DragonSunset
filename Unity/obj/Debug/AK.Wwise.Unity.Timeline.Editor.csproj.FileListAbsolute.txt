@@ -1,0 +1,2 @@
+C:\Users\USUARIO\Documents\GitHub\focunon\Unity\obj\Debug\AK.Wwise.Unity.Timeline.Editor.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\focunon\Unity\obj\Debug\AK.Wwise.Unity.Timeline.Editor.csproj.CoreCompileInputs.cache
