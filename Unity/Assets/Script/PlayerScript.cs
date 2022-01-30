@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
 	}
 
 	Direction direction;
-
+	public ColorChange colorChange;
 	Vector3 lastPos;
 	Quaternion lastRotation;
 	public float frameRate = 0.2f;

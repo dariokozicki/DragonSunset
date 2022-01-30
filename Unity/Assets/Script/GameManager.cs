@@ -42,6 +42,6 @@ public class GameManager : MonoBehaviour
 
     public void Defeat() 
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("LoseScreen");
     }
 }
