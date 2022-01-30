@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - tagContractInfo
+  - Bloque
+  - Food
+  - Perro
   layers:
   - Default
   - TransparentFX

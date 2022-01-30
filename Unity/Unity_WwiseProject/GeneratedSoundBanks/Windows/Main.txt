@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1116398592	Hit			\Default Work Unit\Hit	
+	2715854868	PowerDown			\Default Work Unit\PowerDown	
+	3011204530	Move			\Default Work Unit\Stingers\Move	
+	3233130319	AmbienceWindStop			\Default Work Unit\AmbienceWindStop	
+	3709115519	AmbienceWind			\Default Work Unit\AmbienceWind	
+	3950429679	PowerUp			\Default Work Unit\PowerUp	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	86513517	WingBat-003	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-003		155130
+	99654240	WindLow	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Wind_D2FE4B70.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\WindBlend\WindLow		3803408
+	188278435	WingBat-002	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-002		145954
+	285283810	WingBat-004	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-004		148236
+	472236614	Wind	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Wind_06853A03.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind\Wind		4158044
+	533899522	WingBat-001	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-001		151268
+
