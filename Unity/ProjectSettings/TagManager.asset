@@ -48,3 +48,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Enemy
+    uniqueID: 3634064151
+    locked: 0
+  - name: Food
+    uniqueID: 1012359819
+    locked: 0
+  - name: Player
+    uniqueID: 3923154873
+    locked: 0

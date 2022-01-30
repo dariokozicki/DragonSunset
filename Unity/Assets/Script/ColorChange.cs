@@ -40,6 +40,7 @@ public class ColorChange : MonoBehaviour
         }
 
         colorWhite = animator.GetBool("colorWhite");
+        OnColorSelect();
     }
 
     private void Update()
@@ -72,18 +73,9 @@ public class ColorChange : MonoBehaviour
     void OnColorSelect() 
     {
 
-        int randomNumber = Random.Range(-2, 2);
+        float randomNumber = Random.Range(0f, 1f);
 
-        if(randomNumber <= 0) 
-        {
-            colorWhite = true;
-                    
-        }
-        
-        else 
-        {
-            colorWhite = false;
-        }
+        colorWhite = randomNumber >= 0.5;
 
         animator.SetBool("colorWhite", colorWhite);
     }
