@@ -21,6 +21,30 @@ namespace AK
         static const AkUniqueID POWERUP = 3950429679U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace GAMEPLAY
+        {
+            static const AkUniqueID GROUP = 89505537U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace GAMEPLAY
+
+        namespace MENU
+        {
+            static const AkUniqueID GROUP = 2607556080U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MENU
+
+    } // namespace STATES
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
