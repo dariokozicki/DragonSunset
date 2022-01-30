@@ -11,10 +11,22 @@ public class ColorChange : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
 
-        if(gameObject.tag == "Player") 
+        animator = GetComponent<Animator>();
+
+        if(animator == null) 
+        {
+            return;
+        }
+        
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        
+        if (spriteRenderer == null)
+        {
+            return;
+        }
+
+        if (gameObject.tag == "Player") 
         {
             playerControl = true;
             Debug.Log("Soy El Player");

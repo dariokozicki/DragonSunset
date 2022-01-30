@@ -1,0 +1,2 @@
+C:\Users\USUARIO\Documents\GitHub\focunon\Unity\obj\Debug\AK.Wwise.Unity.API.WwiseTypes.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Documents\GitHub\focunon\Unity\obj\Debug\AK.Wwise.Unity.API.WwiseTypes.csproj.CoreCompileInputs.cache
