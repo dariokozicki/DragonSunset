@@ -16,15 +16,69 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="879888868">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2858743843">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3709115519" Name="AmbienceWind" ObjectPath="\Events\Default Work Unit\AmbienceWind" DurationType="Infinite"/>
+				<Event Id="3709115519" Name="AmbienceWind" ObjectPath="\Events\Default Work Unit\AmbienceWind" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="99654240" Language="SFX">
+							<ShortName>Wind.wav</ShortName>
+							<Path>SFX\Wind_D2FE4B70.wem</Path>
+						</File>
+						<File Id="472236614" Language="SFX">
+							<ShortName>Wind.wav</ShortName>
+							<Path>SFX\Wind_06853A03.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3233130319" Name="AmbienceWindStop" ObjectPath="\Events\Default Work Unit\AmbienceWindStop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1116398592" Name="Hit" ObjectPath="\Events\Default Work Unit\Hit" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="3011204530" Name="Move" ObjectPath="\Events\Default Work Unit\Stingers\Move" DurationType="OneShot" DurationMin="1.654082" DurationMax="1.758118"/>
+				<Event Id="3011204530" Name="Move" ObjectPath="\Events\Default Work Unit\Stingers\Move" DurationType="OneShot" DurationMin="1.654082" DurationMax="1.758118">
+					<IncludedMemoryFiles>
+						<File Id="86513517" Language="SFX">
+							<ShortName>WingBat-003.wav</ShortName>
+							<Path>SFX\WingBat-003_10C4C929.wem</Path>
+						</File>
+						<File Id="188278435" Language="SFX">
+							<ShortName>WingBat-002.wav</ShortName>
+							<Path>SFX\WingBat-002_10C4C929.wem</Path>
+						</File>
+						<File Id="285283810" Language="SFX">
+							<ShortName>WingBat-004.wav</ShortName>
+							<Path>SFX\WingBat-004_10C4C929.wem</Path>
+						</File>
+						<File Id="533899522" Language="SFX">
+							<ShortName>WingBat-001.wav</ShortName>
+							<Path>SFX\WingBat-001_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="296831369" Language="SFX">
+							<ShortName>Hats.wav</ShortName>
+							<Path>SFX\Hats_D79FB2B7.wem</Path>
+						</File>
+						<File Id="714651370" Language="SFX">
+							<ShortName>Harmonic.wav</ShortName>
+							<Path>SFX\Harmonic_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{FEF575AF-CF8D-499F-BC5E-CC56FE7D72A3}">
+							<Children>
+								<SwitchContainer SwitchValue="{068AF0B4-6FB1-4D09-A489-F97ED3CD0E3E}">
+									<Media>
+										<File Id="296831369"/>
+										<File Id="714651370"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="2715854868" Name="PowerDown" ObjectPath="\Events\Default Work Unit\PowerDown" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3950429679" Name="PowerUp" ObjectPath="\Events\Default Work Unit\PowerUp" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
@@ -54,6 +108,18 @@
 					<Path>SFX\WingBat-001_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="89505537" Name="Gameplay" ObjectPath="\States\Default Work Unit\Gameplay" GUID="{068AF0B4-6FB1-4D09-A489-F97ED3CD0E3E}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Gameplay\None" GUID="{4FE22CD5-0709-444D-BED6-8CCE85757EB9}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2607556080" Name="Menu" ObjectPath="\States\Default Work Unit\Menu" GUID="{FEF575AF-CF8D-499F-BC5E-CC56FE7D72A3}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Menu\None" GUID="{B93CA2D0-859F-4EEE-B3D9-ED001F037874}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

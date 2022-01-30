@@ -6,6 +6,9 @@
 				<SoundBank Name="Main" ID="{F2F7AF2E-E769-4C4D-9C66-8E8D97D95063}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AmbienceWind" ID="{C763AD6F-B145-41B5-AD81-5AB57A2105C9}" WorkUnitID="{7BCB3E8E-A0FF-45B5-9EE5-006601CE4FE7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Move" ID="{58482215-A1A7-458E-B9E5-F9E1E1E95562}" WorkUnitID="{7BCB3E8E-A0FF-45B5-9EE5-006601CE4FE7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{006E3E22-3A41-4837-A36E-C7F472997D50}" WorkUnitID="{7BCB3E8E-A0FF-45B5-9EE5-006601CE4FE7}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
