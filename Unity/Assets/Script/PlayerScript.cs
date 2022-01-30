@@ -35,6 +35,8 @@ public class PlayerScript : MonoBehaviour
 
 	public Transform initialPosition;
 
+	AkSoundEngine akSound;
+
 	private void Start()
 	{
 		transform.position = initialPosition.position;
@@ -135,6 +137,7 @@ public class PlayerScript : MonoBehaviour
 		
 		OnDamage.Invoke();
 		transform.position = initialPosition.position;
+		AkSoundEngine.PostEvent("LosePoint", gameObject);
 	}
 
 	void OnRestart() 

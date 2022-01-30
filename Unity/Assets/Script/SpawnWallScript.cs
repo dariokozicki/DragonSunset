@@ -12,6 +12,8 @@ public class SpawnWallScript : MonoBehaviour
 
     public float timerActual;
     public float timerMax;
+    public float timerActualDisminucion;
+    public float timerMaxDisminucion;
 
     void Start()
     {
@@ -23,6 +25,7 @@ public class SpawnWallScript : MonoBehaviour
     {
 
         timerActual += Time.deltaTime;
+        timerActualDisminucion += Time.deltaTime;
 
         if(timerActual >= timerMax) 
         {
@@ -30,6 +33,15 @@ public class SpawnWallScript : MonoBehaviour
             timerActual = 0;
             CreateEnemy();
         
+        }
+
+        if(timerActualDisminucion >= timerMaxDisminucion) 
+        {
+            timerActualDisminucion = 0;
+            if (timerMax > 2f)
+            {
+                timerMax = timerMax - 0.5f;
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Z)) 

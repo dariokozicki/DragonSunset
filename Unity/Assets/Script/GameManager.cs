@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     PlayerScript playerScript;
 
     public UnityEvent OnLose = new UnityEvent();
+    float totalLife;
+    float actualLife;
 
     void Start()
     {
@@ -30,5 +32,15 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("OnLose Invocado");
         OnLose.Invoke();
+        actualLife--;
+        if(actualLife <= 0) 
+        {
+            Defeat();
+        }
+    }
+
+    public void Defeat() 
+    {
+    
     }
 }

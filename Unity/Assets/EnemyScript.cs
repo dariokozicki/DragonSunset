@@ -57,6 +57,7 @@ public class EnemyScript : MonoBehaviour
     {
         Invoke("OnDestroy", timeToDestroy);
         Debug.Log("Has matado a un enemigo");
+        AkSoundEngine.PostEvent("AddPoint", gameObject);
     }
 
     private void OnDestroy()

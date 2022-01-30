@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PointScript : MonoBehaviour
 {
@@ -8,6 +9,14 @@ public class PointScript : MonoBehaviour
     ColorChange playerColor;
     ColorChange pointColor;
     PlayerScript playerScript;
+
+
+    AkSoundEngine akSound;
+
+    public UnityEvent OnAddPoint = new UnityEvent();
+    public UnityEvent OnLosePoint = new UnityEvent();
+
+    public float score;
 
     void Start()
     {
@@ -18,11 +27,6 @@ public class PointScript : MonoBehaviour
         playerScript.OnAddPoint.AddListener(OnPointCheck);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnPointCheck() 
     {
@@ -31,40 +35,42 @@ public class PointScript : MonoBehaviour
             if (pointColor.colorWhite == true && playerColor.colorWhite == pointColor.colorWhite)
             {
                 Debug.Log("Sumaste un punto blanco");
+                AddPoint();
             }
             else if (pointColor.colorWhite == true && playerColor.colorWhite != pointColor.colorWhite)
             {
                 Debug.Log("Perdiste un punto blanco");
+                LosePoint();
             }
 
             if (pointColor.colorWhite == false && playerColor.colorWhite == pointColor.colorWhite)
             {
                 Debug.Log("Sumaste un punto negro");
+                AddPoint();
             }
             else if (pointColor.colorWhite == false && playerColor.colorWhite != pointColor.colorWhite)
             {
                 Debug.Log("Perdiste un punto negro");
+                LosePoint();
             }
-        } else if (zenMode == true) 
-        {
-            if (pointColor.colorWhite == true && playerColor.colorWhite == pointColor.colorWhite)
-            {
-                Debug.Log("Sumaste 2 puntos blanco");
-            }
-            else if (pointColor.colorWhite == true && playerColor.colorWhite != pointColor.colorWhite)
-            {
-                Debug.Log("Sumaste 1 punto blanco");
-            }
-
-            if (pointColor.colorWhite == false && playerColor.colorWhite == pointColor.colorWhite)
-            {
-                Debug.Log("Sumaste 2 puntos negro");
-            }
-            else if (pointColor.colorWhite == false && playerColor.colorWhite != pointColor.colorWhite)
-            {
-                Debug.Log("Sumaste 1 punto negro");
-            }
-        }
+        } 
         
+        
+    }
+
+    
+
+    void AddPoint() 
+    {
+        OnAddPoint.Invoke();
+        score++;
+        AkSoundEngine.PostEvent("AddPoint", gameObject);
+    }
+
+    void LosePoint() 
+    {
+        OnLosePoint.Invoke();
+        score--;
+        AkSoundEngine.PostEvent("losePoint", gameObject);
     }
 }
