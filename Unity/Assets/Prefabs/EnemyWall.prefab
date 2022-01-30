@@ -124,6 +124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorWhite: 1
+  OnColorChange:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &2108713923424915828
 Animator:
   serializedVersion: 3
@@ -305,6 +308,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorWhite: 0
+  OnColorChange:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &3643971852050902723
 Animator:
   serializedVersion: 3
@@ -348,8 +354,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7343843980908555467}
-  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0.000000011924881}
-  m_LocalPosition: {x: 0.30642033, y: 0.4783535, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -0.00000004371139}
+  m_LocalPosition: {x: 3.1937432, y: -1.6957463, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 7343843980140901437}

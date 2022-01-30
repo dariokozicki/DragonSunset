@@ -24,24 +24,12 @@ public class ColorChange : MonoBehaviour
             return;
         }
         
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        
-        if (spriteRenderer == null)
-        {
-            return;
-        }
 
         if (gameObject.tag == "Player") 
         {
             playerControl = true;
-            Debug.Log("Soy El Player");
-        }   else if(gameObject.tag == "Tail") 
-        {
-            playerControl = false;
-            Debug.Log("No soy El Player");
-            playerColor = GameObject.FindGameObjectWithTag("Player").GetComponent<ColorChange>();
-            playerColor.OnColorChange.AddListener(OnSameColor);
             
+            Debug.Log("Soy El Player");
         }
         else
         {
@@ -51,7 +39,7 @@ public class ColorChange : MonoBehaviour
             playerScript.OnAddPoint.AddListener(OnColorSelect);
         }
 
-
+        
         colorWhite = animator.GetBool("colorWhite");
         OnColorSelect();
     }
@@ -67,10 +55,6 @@ public class ColorChange : MonoBehaviour
         }
     }
 
-    private void OnSameColor() 
-    {
-        colorWhite = playerColor.colorWhite;
-    }
 
     void OnChangeColorManual() 
     {
