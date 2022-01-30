@@ -286,10 +286,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7343843980140901434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d63d9d82251beb4c9ab0801b56b970c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cccc698b9776c540804948a04675030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToDestroy: 0.3
+  timeToDestroy: 0.1
   parent: {fileID: 7343843980908555467}
   GameManager: {fileID: 0}
 --- !u!114 &6327365054240290231
