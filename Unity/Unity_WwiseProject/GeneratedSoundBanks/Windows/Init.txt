@@ -1,11 +1,3 @@
-State Group	ID	Name			Wwise Object Path	Notes
-	89505537	Gameplay			\Default Work Unit\Gameplay	
-	2607556080	Menu			\Default Work Unit\Menu	
-
-State	ID	Name	State Group			Notes
-	748895195	None	Gameplay			
-	748895195	None	Menu			
-
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

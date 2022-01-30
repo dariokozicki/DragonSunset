@@ -132,7 +132,7 @@
 							</ReferenceList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="PowerDown" ID="{08EB66CE-2A02-4C36-B788-9FF6F24997C1}" ShortID="664100589">
+						<RandomSequenceContainer Name="Lose" ID="{08EB66CE-2A02-4C36-B788-9FF6F24997C1}" ShortID="664100589">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D398C54E-D24A-478E-B13E-E8A1A7749BB2}"/>

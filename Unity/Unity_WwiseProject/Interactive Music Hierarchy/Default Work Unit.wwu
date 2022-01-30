@@ -466,16 +466,8 @@
 						</MusicTransition>
 					</TransitionList>
 					<ObjectLists/>
-					<ArgumentList>
-						<ArgumentRef Name="Menu" ID="{FEF575AF-CF8D-499F-BC5E-CC56FE7D72A3}"/>
-						<ArgumentRef Name="Gameplay" ID="{068AF0B4-6FB1-4D09-A489-F97ED3CD0E3E}"/>
-					</ArgumentList>
 					<EntryList>
 						<Entry>
-							<Path>
-								<PathElementRef Name="Menu" ID="{FEF575AF-CF8D-499F-BC5E-CC56FE7D72A3}"/>
-								<PathElementRef Name="Gameplay" ID="{068AF0B4-6FB1-4D09-A489-F97ED3CD0E3E}"/>
-							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Harmonic" ID="{E112BFBC-2664-48C1-A69D-420D2718D654}" WorkUnitID="{C6B19178-A051-41A6-88FF-7081C419FD69}" Platform="Linked"/>
 							</AudioNodeInfo>

@@ -1,19 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
+	221232726	Lose			\Default Work Unit\Lose	
 	1116398592	Hit			\Default Work Unit\Hit	
-	2715854868	PowerDown			\Default Work Unit\PowerDown	
 	3011204530	Move			\Default Work Unit\Stingers\Move	
 	3233130319	AmbienceWindStop			\Default Work Unit\AmbienceWindStop	
 	3709115519	AmbienceWind			\Default Work Unit\AmbienceWind	
 	3950429679	PowerUp			\Default Work Unit\PowerUp	
 	3991942870	Music			\Default Work Unit\Music	
-
-State Group	ID	Name			Wwise Object Path	Notes
-	89505537	Gameplay			\Default Work Unit\Gameplay	
-	2607556080	Menu			\Default Work Unit\Menu	
-
-State	ID	Name	State Group			Notes
-	748895195	None	Gameplay			
-	748895195	None	Menu			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	86513517	WingBat-003	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-003		155130

@@ -66,12 +66,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="PowerDown" ID="{9E866E7E-A57D-4052-BD28-C24722D4432F}">
+				<Event Name="Lose" ID="{9E866E7E-A57D-4052-BD28-C24722D4432F}">
 					<ChildrenList>
 						<Action Name="" ID="{44AC4B6F-F108-4C23-9F13-8559A3A11275}" ShortID="779864819">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="PowerDown" ID="{08EB66CE-2A02-4C36-B788-9FF6F24997C1}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
+									<ObjectRef Name="Lose" ID="{08EB66CE-2A02-4C36-B788-9FF6F24997C1}" WorkUnitID="{F5C4EB91-864B-4187-B423-EABFE2BA3AEC}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
