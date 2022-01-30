@@ -13,13 +13,13 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ADDPOINT = 1059305220U;
         static const AkUniqueID AMBIENCEWIND = 3709115519U;
         static const AkUniqueID AMBIENCEWINDSTOP = 3233130319U;
-        static const AkUniqueID HIT = 1116398592U;
         static const AkUniqueID LOSE = 221232726U;
+        static const AkUniqueID LOSEPOINT = 2508548636U;
         static const AkUniqueID MOVE = 3011204530U;
         static const AkUniqueID MUSIC = 3991942870U;
-        static const AkUniqueID POWERUP = 3950429679U;
     } // namespace EVENTS
 
     namespace BANKS

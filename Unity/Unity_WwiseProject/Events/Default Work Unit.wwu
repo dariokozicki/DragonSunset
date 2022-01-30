@@ -44,7 +44,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Hit" ID="{1B719982-3243-4F1B-8EA0-98E2EA37C87C}">
+				<Event Name="losePoint" ID="{1B719982-3243-4F1B-8EA0-98E2EA37C87C}">
 					<ChildrenList>
 						<Action Name="" ID="{D544C71E-85CD-4C9F-91E5-CAADD6966429}" ShortID="722573089">
 							<ReferenceList>
@@ -55,7 +55,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="PowerUp" ID="{6CBBDE11-39DA-4940-8647-E8017C3F289C}">
+				<Event Name="AddPoint" ID="{6CBBDE11-39DA-4940-8647-E8017C3F289C}">
 					<ChildrenList>
 						<Action Name="" ID="{B8EA8C9A-A11C-40B5-9A8E-DE0716E5E5A6}" ShortID="1689583">
 							<ReferenceList>
