@@ -7,15 +7,26 @@ Event	ID	Name			Wwise Object Path	Notes
 	3709115519	AmbienceWind			\Default Work Unit\AmbienceWind	
 	3991942870	Music			\Default Work Unit\Music	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1038839729	BgMusic			\Default Work Unit\BgMusic	
+
+State	ID	Name	State Group			Notes
+	221232726	Lose	BgMusic			
+	748895195	None	BgMusic			
+	1256202815	Play	BgMusic			
+	2607556080	Menu	BgMusic			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	86513517	WingBat-003	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-003		155130
 	99654240	WindLow	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Wind_D2FE4B70.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\WindBlend\WindLow		3803408
 	188278435	WingBat-002	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-002		145954
 	285283810	WingBat-004	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-004		148236
-	296831369	Hats	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Hats_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Harmonic\Hats		5890292
 	311992833	PowerUp	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\PowerUp_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\PowerUp\PowerUp		92970
+	350781152	Hats-002	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Hats-002_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Menu\Hats-002		736342
 	472236614	Wind	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Wind_06853A03.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Wind\Wind		4158044
 	533899522	WingBat-001	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\WingBat-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\WingBat\WingBat-001		151268
-	714651370	Harmonic	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Harmonic_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Harmonic\Harmonic		5890292
+	597816016	Harmony2-002	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Harmony2-002_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Play\Play2\Harmony2-002		2945176
+	627543909	Lose	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Lose_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Death\Lose		368204
+	984503807	Harmony1	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\Harmony1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Play\Play1\Harmony1		3681456
 	992148684	PowerDown-001	C:\GD\focunon\Unity\Unity_WwiseProject\.cache\Windows\SFX\PowerDown-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stingers\Hit\PowerDown-001		48396
 
