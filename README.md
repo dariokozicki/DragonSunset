@@ -16,4 +16,13 @@ Movement: Arrow Keys
 
 Switch Color: Space
 
+![Login](https://imgur.com/PIzVKnO)
+![Signature](https://imgur.com/gjp9XXG)
+![Menu](https://imgur.com/TWB9xSQ)
+![Game](https://imgur.com/bIMBHVu)
+![End](https://imgur.com/Woup8CA)
+![Leaderboard](https://imgur.com/tCIPw9w)
+
+
+
 # Thanks for playing!
