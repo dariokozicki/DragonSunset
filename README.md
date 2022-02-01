@@ -16,12 +16,13 @@ Movement: Arrow Keys
 
 Switch Color: Space
 
-![Login](https://imgur.com/PIzVKnO)
-![Signature](https://imgur.com/gjp9XXG)
-![Menu](https://imgur.com/TWB9xSQ)
-![Game](https://imgur.com/bIMBHVu)
-![End](https://imgur.com/Woup8CA)
-![Leaderboard](https://imgur.com/tCIPw9w)
+![image](https://user-images.githubusercontent.com/38699660/152052471-09f753db-f83c-4192-b648-01ee002064dd.png)
+![image](https://user-images.githubusercontent.com/38699660/152052485-1bd59d43-8cf0-4695-9ac8-cd8f7f9c11c4.png)
+![image](https://user-images.githubusercontent.com/38699660/152052494-b6e227d7-ad4d-4698-954d-7ad72e594b0d.png)
+![image](https://user-images.githubusercontent.com/38699660/152052501-9c9c1564-1b27-45d8-adca-b6c64932baa8.png)
+![image](https://user-images.githubusercontent.com/38699660/152052511-3dfa4a65-63b3-44f1-a275-4142f6afdedd.png)
+![image](https://user-images.githubusercontent.com/38699660/152052520-c8482bfa-fecc-49d6-8206-3b87d9ab12c2.png)
+
 
 
 
